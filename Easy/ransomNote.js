@@ -33,3 +33,4 @@ var canConstruct = function(ransomNote, magazine) {
 let ransomNoteExample = "aa";
 let magazineExample = "ab";
 console.log(canConstruct(ransomNoteExample, magazineExample));
+// This will return false
