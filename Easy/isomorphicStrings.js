@@ -12,8 +12,13 @@ var isIsomorphic = function (s, t) {
     if (sHashmap[s[i]]) {
       newS += sHashmap[s[i]];
     } else {
-      hashmap[s[i]] = t[i];
-      newS += hashmap[s[i]];
+      if (tHashmap[t[i]]) {
+        return false;
+      }
+
+      sHashmap[s[i]] = t[i];
+      tHashmap[t[i]] = s[i];
+      newS += sHashmap[s[i]];
     }
   }
 
