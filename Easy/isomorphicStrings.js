@@ -5,22 +5,23 @@
  */
 var isIsomorphic = function (s, t) {
   let newS = "";
-  let hashmap = {};
+  let sHashmap = {};
+  let tHashmap = {};
 
   for (let i = 0; i < s.length; i++) {
-    if (hashmap[s[i]]) {
-      newS += hashmap[s[i]];
+    if (sHashmap[s[i]]) {
+      newS += sHashmap[s[i]];
     } else {
       hashmap[s[i]] = t[i];
       newS += hashmap[s[i]];
     }
   }
 
-  return newS;
+  return newS === t;
 };
 
-// let s = "badc";
-// let t = "baba";
-let s = "foo";
-let t = "bar";
+let s = "badc";
+let t = "baba";
+// let s = "foo";
+// let t = "bar";
 console.log(isIsomorphic(s, t));
