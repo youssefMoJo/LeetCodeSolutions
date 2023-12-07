@@ -47,4 +47,5 @@ var summaryRanges = function (nums) {
 
 // Example usage with the provided array 'nums'.
 let nums = [0, 2, 3, 4, 6, 8, 9];
+// The example will produce: ['0', '2->4', '6', '8->9']
 console.log(summaryRanges(nums));
