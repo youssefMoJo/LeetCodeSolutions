@@ -23,6 +23,12 @@ var removeDuplicates = function (nums) {
   return i;
 };
 
-let nums = [0, 0, 1, 1, 1, 1, 2, 3, 3];
+// Test Case 1
+let nums1 = [1, 1, 1, 2, 2, 3];
+let result1 = removeDuplicates(nums1);
+console.log(result1, nums1.slice(0, result1)); // Output: 5, [1, 1, 2, 2, 3]
 
-console.log(removeDuplicates(nums));
+// Test Case 2
+let nums2 = [0, 0, 1, 1, 1, 1, 2, 3, 3];
+let result2 = removeDuplicates(nums2);
+console.log(result2, nums2.slice(0, result2)); // Output: 7, [0, 0, 1, 1, 2, 3, 3]
