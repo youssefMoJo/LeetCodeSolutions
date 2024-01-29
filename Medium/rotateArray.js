@@ -4,7 +4,15 @@
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 var rotate = function (nums, k) {
-  return true;
+  let ArrLength = nums.length;
+  let NA = nums.slice();
+
+  for (let i = 0; i < ArrLength; i++) {
+    let nextLoc = (i + k) % ArrLength;
+    nums[nextLoc] = NA[i];
+  }
+
+  return nums;
 };
 
 let nums = [1, 2, 3, 4, 5, 6, 7];
