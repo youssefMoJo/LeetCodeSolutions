@@ -1,4 +1,6 @@
 /**
+ * Problem: https://leetcode.com/problems/rotate-array/?envType=study-plan-v2&envId=top-interview-150
+
  * Rotates the elements of the given array to the right by k steps in-place.
  *
  * @param {number[]} nums - The array of numbers to be rotated.
