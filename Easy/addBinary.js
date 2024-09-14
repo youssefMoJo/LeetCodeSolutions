@@ -1,4 +1,6 @@
 /**
+ * Problem link: https://leetcode.com/problems/add-binary/description/
+ *
  * @param {string} a
  * @param {string} b
  * @return {string}
